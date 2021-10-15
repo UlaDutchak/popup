@@ -21,4 +21,8 @@ buttonYes.onclick = function(event) {
     popup.style.display='none';
     localStorage.setItem('popup1', 'none');
   }
+
+  if (localStorage.getItem("popup1")) {
+    popup.style.display='none';
+  }
 }
