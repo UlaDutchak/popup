@@ -1,0 +1,53 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(83, 83, 83, 0.5);
+  opacity: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    height: 30vw;
+    background-color: rgb(255, 252, 78);
+    border-radius: 10%;
+  }
+
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgb(100,100,100);
+  }
+
+  &__input {
+    width: 30vw;
+    height: 26px;
+    margin-bottom: 5vw;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+}
+
+.button {
+  background-color: rgb(238, 94, 11);
+  border: transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.3vw;
+  width: 13vw;
+  height: 5vw;
+  cursor: pointer;
+}
